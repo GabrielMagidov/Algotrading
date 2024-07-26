@@ -88,6 +88,9 @@ Sortino Ratio: 1.10
 Max Drawdown: 15.00%
 Calmar Ratio: 0.80
 ```
+
+## Contributing
+Contributions are welcome! Please open an issue or submit a pull request.
     
 
 
