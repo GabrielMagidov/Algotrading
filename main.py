@@ -3,6 +3,7 @@ import requests
 import pandas as pd
 import matplotlib.dates as mdates
 import matplotlib.pyplot as plt
+import numpy as np
 from datetime import datetime
 from strategies import ChronosStrategy, BuyAndHoldStrategy, SellAndHoldStrategy
 from backtesting import backtest
@@ -13,6 +14,35 @@ def load_config(json_file):
     with open(json_file, 'r') as f:
         config = json.load(f)
     return config
+
+def mean_imputation_without_leakage(srs, high, low):
+    filled_srs = srs.copy()
+    for index in range(len(srs)):
+        if pd.isnull(srs.iloc[index]):
+            valid_values = srs.where((srs >= low[index]) & (srs <= high[index])).dropna()
+            if len(valid_values) > 0:
+                filled_srs.iloc[index] = valid_values.expanding().mean().iloc[-1]
+            else:
+                filled_srs.iloc[index] = np.nan  # In case there are no valid values to compute the mean
+    return filled_srs
+
+def clean_and_fill_data(data):
+    # Check and replace bad values with NaN
+    bad_open_condition = (data['open'] < data['low']) | (data['open'] > data['high'])
+    bad_close_condition = (data['close'] < data['low']) | (data['close'] > data['high'])
+    
+    data.loc[bad_open_condition, 'open'] = np.nan
+    data.loc[bad_close_condition, 'close'] = np.nan
+
+    # Check for NaN values in 'volume' and replace with NaN (if not already NaN)
+    data['volume'] = data['volume'].replace(0, np.nan)
+
+    # Fill NaN values using the mean_imputation_without_leakage function
+    data['open'] = mean_imputation_without_leakage(data['open'], data['high'], data['low'])
+    data['close'] = mean_imputation_without_leakage(data['close'], data['high'], data['low'])
+    data['volume'] = data['volume'].fillna(method='ffill').fillna(method='bfill')
+
+    return data
 
 # Make API call function
 def make_api_call(base_url, endpoint="", method="GET", **kwargs):
@@ -97,6 +127,7 @@ if __name__ == "__main__":
     END_DATE = config['END_DATE']
     WINDOW = config['WINDOW']
     BALANCE = config['BALANCE']
+    CLEAN_THE_DATA = config['CLEAN_THE_DATA']
 
     # Convert start and end dates to timestamps
     start_date = int(datetime(**START_DATE).timestamp() * 1000)
@@ -106,7 +137,14 @@ if __name__ == "__main__":
 
     # Get data
     data = get_binance_historical_data(SYMBOL, INTERVAL, start_date, end_date)
+    
+    if CLEAN_THE_DATA:
+        data = clean_and_fill_data(data)
+        
     context_df = get_binance_historical_data(CONTEXT_SYMBOL, INTERVAL, start_date, end_date)
+    
+    if CLEAN_THE_DATA:
+        context_df = clean_and_fill_data(context_df)
     
     context = [data.high.values, data.low.values, context_df.close.values, data.volume.values, context_df.volume.values]
     strategy = ChronosStrategy(WINDOW)
