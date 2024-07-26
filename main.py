@@ -120,59 +120,61 @@ if __name__ == "__main__":
     # Load configuration from JSON file
     config = load_config('config.json')
 
-    SYMBOL = config['SYMBOL']
-    CONTEXT_SYMBOL = config['CONTEXT_SYMBOL']
-    INTERVAL = config['INTERVAL']
-    START_DATE = config['START_DATE']
-    END_DATE = config['END_DATE']
-    WINDOW = config['WINDOW']
-    BALANCE = config['BALANCE']
-    CLEAN_THE_DATA = config['CLEAN_THE_DATA']
+    backtest_values = config['backtest']
+    
+    symbol = backtest_values['symbol']
+    context_symbol = backtest_values['context_symbol']
+    interval = backtest_values['interval']
+    start_date = backtest_values['start_date']
+    end_date = backtest_values['end_date']
+    window = backtest_values['window']
+    balance = backtest_values['balance']
+    clean_the_data = backtest_values['clean_the_data']
+    save_to_csv = backtest_values['save_to_csv']
+    slippage_factor = backtest_values['slippage_factor']
+    comission = backtest_values['comission']
+    sl_rate = backtest_values['sl_rate']
 
     # Convert start and end dates to timestamps
-    start_date = int(datetime(**START_DATE).timestamp() * 1000)
+    start_date = int(datetime(**start_date).timestamp() * 1000)
     end_date = ''
-    if END_DATE['year'] != -1:
-        end_date = int(datetime(**END_DATE).timestamp() * 1000)
+    if end_date['year'] != -1:
+        end_date = int(datetime(**start_date).timestamp() * 1000)
 
     # Get data
-    data = get_binance_historical_data(SYMBOL, INTERVAL, start_date, end_date)
+    data = get_binance_historical_data(symbol, interval, start_date, end_date)
     
-    if CLEAN_THE_DATA:
+    if clean_the_data:
         data = clean_and_fill_data(data)
         
-    context_df = get_binance_historical_data(CONTEXT_SYMBOL, INTERVAL, start_date, end_date)
+    context_df = get_binance_historical_data(context_symbol, interval, start_date, end_date)
     
-    if CLEAN_THE_DATA:
+    if clean_the_data:
         context_df = clean_and_fill_data(context_df)
     
     context = [data.high.values, data.low.values, context_df.close.values, data.volume.values, context_df.volume.values]
-    strategy = ChronosStrategy(WINDOW)
+    strategy = ChronosStrategy(window)
     data["strategy_signal"] = strategy.calc_signal(data.copy(deep=True),context)
 
-    BAH_strategy = BuyAndHoldStrategy(WINDOW=WINDOW)
-    SAH_strategy = SellAndHoldStrategy(WINDOW=WINDOW)
+    BAH_strategy = BuyAndHoldStrategy(WINDOW=window)
+    SAH_strategy = SellAndHoldStrategy(WINDOW=window)
     data["BAH_signal"] = BAH_strategy.calc_signal(data.copy(deep=True))
     data["SAH_signal"] = SAH_strategy.calc_signal(data.copy(deep=True))
     
-    SLIPPAGE_FACTOR = config["SLIPPAGE_FACTOR"]
-    COMISSION = config["COMISSION"]
-    SL_RATE = config['SL_RATE']
-    
     backtest_df = backtest(data=data.copy(deep=True), strategy=strategy, signals=data["strategy_signal"],
-                    starting_balance=BALANCE, slippage_factor=SLIPPAGE_FACTOR, comission=COMISSION, sl_rate=SL_RATE)
+                    starting_balance=balance, slippage_factor=slippage_factor, comission=comission, sl_rate=sl_rate)
     print("\nPortfolio value:", backtest_df["portfolio_value"].iloc[-1], "\n")
     evaluate_strategy(backtest_df, "Chronos Strategy")
     BAH_backtest_df = backtest(data=data.copy(deep=True), strategy=BAH_strategy, signals=data["BAH_signal"],
-                    starting_balance=BALANCE, slippage_factor=SLIPPAGE_FACTOR, comission=COMISSION, sl_rate=None)
+                    starting_balance=balance, slippage_factor=slippage_factor, comission=comission, sl_rate=None)
     print("\nPortfolio value:", BAH_backtest_df["portfolio_value"].iloc[-1], "\n")
     evaluate_strategy(BAH_backtest_df, "Buy and Hold Strategy")
     SAH_backtest_df = backtest(data=data.copy(deep=True), strategy=SAH_strategy, signals=data["SAH_signal"],
-                    starting_balance=BALANCE, slippage_factor=SLIPPAGE_FACTOR, comission=COMISSION, sl_rate=None)
+                    starting_balance=balance, slippage_factor=slippage_factor, comission=comission, sl_rate=None)
     print("\nPortfolio value:", SAH_backtest_df["portfolio_value"].iloc[-1], "\n")
     evaluate_strategy(SAH_backtest_df, "Sell and Hold Strategy")
     
-    if config["SAVE_TO_CSV"]:
+    if save_to_csv:
         backtest_df["BAH_portfolio_value"] = BAH_backtest_df["portfolio_value"]
         backtest_df["SAH_portfolio_value"] = SAH_backtest_df["portfolio_value"]
         backtest_df.to_csv('backtest_df.csv')

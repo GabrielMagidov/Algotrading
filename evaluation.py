@@ -66,19 +66,19 @@ def evaluate_strategy(b_df, strat_name):
     # Load configuration from JSON file
     config = load_config('config.json')
 
-    START_DATE_INDEX = config['START_DATE_INDEX']
+    window = config['backtest']['window']
     
     total_return = calc_total_return(
-        b_df['portfolio_value'][START_DATE_INDEX:])
+        b_df['portfolio_value'][window:])
     annualized_return = calc_annualized_return(
-        b_df['portfolio_value'][START_DATE_INDEX:])
+        b_df['portfolio_value'][window:])
     annualized_sharpe = calc_annualized_sharpe(
-        b_df['portfolio_value'][START_DATE_INDEX:], rf=0.04)
+        b_df['portfolio_value'][window:], rf=0.04)
     sortino_ratio = calc_sortino(
-        b_df['portfolio_value'][START_DATE_INDEX:], rf=0.04)
+        b_df['portfolio_value'][window:], rf=0.04)
     max_drawdown = calc_max_drawdown(
-        b_df['portfolio_value'][START_DATE_INDEX:])
-    calmar_ratio = calc_calmar(b_df['portfolio_value'][START_DATE_INDEX:])
+        b_df['portfolio_value'][window:])
+    calmar_ratio = calc_calmar(b_df['portfolio_value'][window:])
 
     print(f"\nResults for {strat_name}:")
     print(f"Total Return: {total_return:.2%}")

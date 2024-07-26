@@ -1,0 +1,12 @@
+required_packages = """
+pandas
+yfinance
+requests
+numpy
+matplotlib
+torch
+git+https://github.com/amazon-science/chronos-forecasting.git
+"""
+
+with open('requirements.txt', 'w') as file:
+    file.write(required_packages.strip())

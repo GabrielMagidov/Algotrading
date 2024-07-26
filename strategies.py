@@ -147,29 +147,37 @@ class ChronosStrategy(BaseStrategy):
     def predict_model(self, data: pd.DataFrame, context: np.ndarray[np.ndarray, np.ndarray]) -> Tuple[np.ndarray, np.ndarray, np.ndarray]:
         config = load_config('config.json')
         
-        PREDICTION_LENGTH = config['PREDICTION_LENGTH']
-        NUM_SAMPLES = config['NUM_SAMPLES']
-        TEMPERATURE = config['TEMPERATURE']
-        TOP_K = config['TOP_K']
-        TOP_P = config['TOP_P']
+        # Load chronos config
+        chronos_values = config['chronos']
         
-        pipeline = ChronosPipeline.from_pretrained(
-            model_name_or_path="amazon/chronos-t5-small",
-            dtype="bfloat16",
-        )
-        # pipeline = ChronosPipeline.from_pretrained(
-            # model_name_or_path="amazon/chronos-t5-small",
-            # device_map = "cuda", # use "cpu" for CPU inference
-            # dtype = torch.bfloat16, # use torch.float32 for FP32 inference
-        # )
-        # context = tensor.torch(context) # Convert context to torch tensor for GPU inference
+        is_mac = chronos_values['is_mac']
+        prediction_length = chronos_values['prediction_length']
+        num_samples = chronos_values['num_samples']
+        temperature = chronos_values['temperature']
+        top_k = chronos_values['top_k']
+        top_p = chronos_values['top_p']
+        
+        if is_mac:
+            pipeline = ChronosPipeline.from_pretrained(
+                model_name_or_path="amazon/chronos-t5-small",
+                dtype="bfloat16",
+            )
+            
+        else:
+            pipeline = ChronosPipeline.from_pretrained(
+                model_name_or_path="amazon/chronos-t5-small",
+                device_map = "cuda", # use "cpu" for CPU inference
+                dtype = torch.bfloat16, # use torch.float32 for FP32 inference
+            )
+            context = torch.Tensor(context) # Convert context to torch tensor for GPU inference
+            
         forecast = pipeline.predict(
             context = context,
-            prediction_length = PREDICTION_LENGTH,
-            num_samples = NUM_SAMPLES,
-            temperature = TEMPERATURE,
-            top_k = TOP_K,
-            top_p = TOP_P,
+            prediction_length = prediction_length,
+            num_samples = num_samples,
+            temperature = temperature,
+            top_k = top_k,
+            top_p = top_p,
         )
 
         forecast_index = range(len(data), len(data) + 2)
@@ -179,14 +187,16 @@ class ChronosStrategy(BaseStrategy):
     def calc_signal(self, data: pd.DataFrame, context) -> pd.Series:
         config = load_config('config.json')
         
-        STC_LENGTH = config['STC_LENGTH']
-        FAST_LENGTH = config['FAST_LENGTH']
-        SLOW_LENGTH = config['SLOW_LENGTH']
-        AAA = config['AAA']
-        OVER_SOLD = config['OVER_SOLD']
-        OVER_BOUGHT = config['OVER_BOUGHT']
+        stc_values = config['stc']
         
-        data["STC"] = self.calc_STC(data, STC_LENGTH, FAST_LENGTH, SLOW_LENGTH, AAA)
+        stc_length = stc_values['stc_length']
+        fast_length = stc_values['fast_length']
+        slow_length = stc_values['slow_length']
+        aaa = stc_values['aaa']
+        over_sold = stc_values['over_sold']
+        over_bought = stc_values['over_bought']       
+        
+        data["STC"] = self.calc_STC(data, stc_length, fast_length, slow_length, aaa)
         data["strategy_signal"] = StrategySignal.DO_NOTHING
         buy_num = 0
         sell_num = 0
@@ -195,10 +205,10 @@ class ChronosStrategy(BaseStrategy):
                 print(f'At row {i}')
             low, median, high = self.predict_model(data.iloc[i - self.window:i + 1], context)
             
-            if (median[0] > data.iloc[i]['close']) and (data.iloc[i, data.columns.get_loc('STC')] < OVER_BOUGHT):
+            if (median[0] > data.iloc[i]['close']) and (data.iloc[i, data.columns.get_loc('STC')] < over_bought):
                 data.iloc[i, data.columns.get_loc('strategy_signal')] = ActionType.BUY
                 buy_num += 1
-            elif median[0] < data.iloc[i]['close'] and (data.iloc[i, data.columns.get_loc('STC')] > OVER_SOLD):
+            elif median[0] < data.iloc[i]['close'] and (data.iloc[i, data.columns.get_loc('STC')] > over_sold):
                 data.iloc[i, data.columns.get_loc('strategy_signal')] = ActionType.SELL
                 sell_num += 1
         print(f'buy: {buy_num}, sell: {sell_num}')
