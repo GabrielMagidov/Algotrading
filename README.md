@@ -31,7 +31,7 @@ For details on Chronos models, training data and procedures, and experimental re
 2. **Install the required dependencies**:
    ```bash
    pip install -r requirements_{YOUR_OS}.txt
-   either 'mac' or 'windows'
+either 'mac' or 'windows'
 ## Usage
 1. **Configuration**:
    Modify the config.json file to set your desired parameters.
