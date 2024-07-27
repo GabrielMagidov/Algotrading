@@ -32,19 +32,6 @@ For details on Chronos models, training data and procedures, and experimental re
    ```bash
    pip install -r requirements_{YOUR_OS}.txt
 
-## MacOS (M chips) vs. Windows/Linux
-Set the is_mac value in the configuration file to true if you are using MacOS with M chips, and false for Windows/Linux. This will ensure compatibility with your operating system.
-- **For MacOS (M chips)**:
-```python
-from chronos_mlx import ChronosPipeline
-# strategies.py line 8
-```
-- **For Windows/Linux**:
-```python
-from chronos import ChronosPipeline
-# strategies.py line 9
-```
-
 ## Usage
 1. **Configuration**:
    Modify the config.json file to set your desired parameters.
