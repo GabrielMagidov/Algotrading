@@ -9,7 +9,7 @@ from chronos_mlx import ChronosPipeline # For MacOS (M chips)
 # from chronos import ChronosPipeline # For Windows, Linux. Note lines 157 to 162.
 from typing import Tuple, Any, List
 import json
-
+import platform # To check the operating system
 # Function to load variables from a JSON file
 def load_config(json_file):
     with open(json_file, 'r') as f:
@@ -150,7 +150,9 @@ class ChronosStrategy(BaseStrategy):
         # Load chronos config
         chronos_values = config['chronos']
         
-        is_mac = chronos_values['is_mac']
+        is_mac = platform.system() == 'Darwin'
+        if platform.system() == 'Linux':
+            raise NotImplementedError("Our Code does isn't supported on Linux yet.")
         prediction_length = chronos_values['prediction_length']
         num_samples = chronos_values['num_samples']
         temperature = chronos_values['temperature']

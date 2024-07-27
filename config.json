@@ -24,7 +24,6 @@
   },
 
   "chronos": {
-    "is_mac": true,
     "prediction_length": 1,
     "num_samples": 20,
     "temperature": 1.0,

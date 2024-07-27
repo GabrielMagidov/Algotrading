@@ -1,0 +1,7 @@
+chronos==0.3
+matplotlib==3.9.1
+numpy==2.0.1
+pandas==2.2.2
+Requests==2.32.3
+torch==2.3.1
+yfinance==0.2.40
