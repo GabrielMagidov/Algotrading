@@ -5,11 +5,18 @@ import random
 from models import ActionType, Position, PositionType, StrategySignal
 from abc import ABC, abstractmethod
 import torch
-from chronos_mlx import ChronosPipeline # For MacOS (M chips)
-# from chronos import ChronosPipeline # For Windows, Linux. Note lines 157 to 162.
 from typing import Tuple, Any, List
 import json
 import platform # To check the operating system
+
+# Load the currect chronos based on the operating system
+if platform.system() == 'Darwin': # mac 
+    from chronos_mlx import ChronosPipeline
+else: # windows
+    from chronos import ChronosPipeline
+
+
+
 # Function to load variables from a JSON file
 def load_config(json_file):
     with open(json_file, 'r') as f:
