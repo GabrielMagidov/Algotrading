@@ -27,7 +27,7 @@ def mean_imputation_without_leakage(srs, high, low):
     return filled_srs
 
 def clean_and_fill_data(data):
-    # Check and replace bad values with NaN
+    # Check and replace bad values with NaN 
     bad_open_condition = (data['open'] < data['low']) | (data['open'] > data['high'])
     bad_close_condition = (data['close'] < data['low']) | (data['close'] > data['high'])
     
@@ -137,9 +137,10 @@ if __name__ == "__main__":
 
     # Convert start and end dates to timestamps
     start_date = int(datetime(**start_date).timestamp() * 1000)
-    end_date = ''
     if end_date['year'] != -1:
-        end_date = int(datetime(**start_date).timestamp() * 1000)
+        end_date = int(datetime(**end_date).timestamp() * 1000)
+    else:
+        end_date = ''
 
     # Get data
     data = get_binance_historical_data(symbol, interval, start_date, end_date)
