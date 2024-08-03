@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.4.17)  30 JUL 2024 18:22
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.4.17)  3 AUG 2024 10:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -743,39 +743,43 @@ File: gloss-english.ldf polyglossia: module for English
 Package polyglossia Info: Option: English, variant=american.
 )
 
-Package fontspec Info: Arial scale = 0.8311539639799423.
+Package fontspec Info: David CLM scale = 1.075259172733151.
 
 
-Package fontspec Info: Arial scale = 0.8311539639799423.
+Package fontspec Info: David CLM scale = 1.075259172733151.
 
 
-Package fontspec Info: Arial/B scale = 0.8311539639799423.
+Package fontspec Info: David CLM/B scale = 1.062008343777362.
 
 
-Package fontspec Info: Arial/I scale = 0.8311539639799423.
+Package fontspec Info: David CLM/I scale = 1.075259172733151.
 
 
-Package fontspec Info: Arial/BI scale = 0.8311539639799423.
+Package fontspec Info: David CLM/BI scale = 1.062008343777362.
 
 
-Package fontspec Info: Font family 'Arial(0)' created for font 'Arial' with
-(fontspec)             options
+Package fontspec Info: Font family 'DavidCLM(0)' created for font 'David CLM'
+(fontspec)             with options
 (fontspec)             [Mapping=tex-text,Scale=MatchLowercase,Script=Hebrew].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[0.8311539639799423]"Arial/OT:script=hebr;language=dflt;mapping=tex-text;"
+(fontspec)             <->s*[1.075259172733151]"David
+(fontspec)             CLM/OT:script=hebr;language=dflt;mapping=tex-text;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[0.8311539639799423]"Arial/B/OT:script=hebr;language=dflt;mapping=tex-text;"
+(fontspec)             <->s*[1.062008343777362]"David
+(fontspec)             CLM/B/OT:script=hebr;language=dflt;mapping=tex-text;"
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 (fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[0.8311539639799423]"Arial/I/OT:script=hebr;language=dflt;mapping=tex-text;"
+(fontspec)             <->s*[1.075259172733151]"David
+(fontspec)             CLM/I/OT:script=hebr;language=dflt;mapping=tex-text;"
 (fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
 (fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->s*[0.8311539639799423]"Arial/BI/OT:script=hebr;language=dflt;mapping=tex-text;"
+(fontspec)             <->s*[1.062008343777362]"David
+(fontspec)             CLM/BI/OT:script=hebr;language=dflt;mapping=tex-text;"
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
  (./main.aux)
@@ -852,15 +856,15 @@ Package caption Info: End \AtBeginDocument code.
 
 Package todonotes Warning: The length marginparwidth is less than 2cm and will most likely cause issues with the appearance of inserted todonotes. The issue can be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to loading the todonotes package. on input line 58.
 
-LaTeX Font Info:    Font shape `TU/Arial(0)/m/n' will be
-(Font)              scaled to size 9.10121pt on input line 58.
-LaTeX Font Info:    Font shape `TU/Arial(0)/m/n' will be
-(Font)              scaled to size 14.36246pt on input line 68.
+LaTeX Font Info:    Font shape `TU/DavidCLM(0)/m/n' will be
+(Font)              scaled to size 11.77405pt on input line 58.
+LaTeX Font Info:    Font shape `TU/DavidCLM(0)/m/n' will be
+(Font)              scaled to size 18.58041pt on input line 68.
 LaTeX Info: Redefining \rmfamily on input line 68.
 LaTeX Info: Redefining \sffamily on input line 68.
 LaTeX Info: Redefining \ttfamily on input line 68.
-LaTeX Font Info:    Font shape `TU/Arial(0)/m/n' will be
-(Font)              scaled to size 9.97394pt on input line 68.
+LaTeX Font Info:    Font shape `TU/DavidCLM(0)/m/n' will be
+(Font)              scaled to size 12.90308pt on input line 68.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 68.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -891,10 +895,10 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 68.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Font shape `TU/Arial(0)/m/n' will be
-(Font)              scaled to size 11.96872pt on input line 68.
-LaTeX Font Info:    Font shape `TU/Arial(0)/b/n' will be
-(Font)              scaled to size 11.96872pt on input line 68.
+LaTeX Font Info:    Font shape `TU/DavidCLM(0)/m/n' will be
+(Font)              scaled to size 15.48367pt on input line 68.
+LaTeX Font Info:    Font shape `TU/DavidCLM(0)/b/n' will be
+(Font)              scaled to size 15.29295pt on input line 68.
 LaTeX Info: Redefining \rmfamily on input line 69.
 LaTeX Info: Redefining \sffamily on input line 69.
 LaTeX Info: Redefining \ttfamily on input line 69.
@@ -989,8 +993,8 @@ LaTeX Info: Redefining \ttfamily on input line 82.
 File: Data.png Graphic file (type bmp)
 <Data.png>
  [2]
-LaTeX Font Info:    Font shape `TU/Arial(0)/b/n' will be
-(Font)              scaled to size 9.97394pt on input line 90.
+LaTeX Font Info:    Font shape `TU/DavidCLM(0)/b/n' will be
+(Font)              scaled to size 12.74414pt on input line 90.
 File: bitcoin_stats.png Graphic file (type bmp)
 <bitcoin_stats.png>
 LaTeX Info: Redefining \rmfamily on input line 94.
@@ -1025,7 +1029,12 @@ LaTeX Info: Redefining \ttfamily on input line 103.
 LaTeX Info: Redefining \rmfamily on input line 103.
 LaTeX Info: Redefining \sffamily on input line 103.
 LaTeX Info: Redefining \ttfamily on input line 103.
- [3]
+
+Overfull \hbox (1.19398pt too wide) in paragraph at lines 103--104
+[][][]\TU/lmr/m/n/10.95 mean_imputation_without_leakage($\OMS/lmsy/m/n/10.95 ^^A$\TU/lmr/m/n/10.95 )[] []\TU/DavidCLM(0)/m/n/10.95 שהיא מחליפה את הערכים החסרים בממוצע הערכים[]
+ []
+
+[3]
 File: Data_cleaning.png Graphic file (type bmp)
 <Data_cleaning.png>
 LaTeX Info: Redefining \rmfamily on input line 115.
@@ -1034,21 +1043,9 @@ LaTeX Info: Redefining \ttfamily on input line 115.
 LaTeX Info: Redefining \rmfamily on input line 115.
 LaTeX Info: Redefining \sffamily on input line 115.
 LaTeX Info: Redefining \ttfamily on input line 115.
-LaTeX Info: Redefining \rmfamily on input line 115.
-LaTeX Info: Redefining \sffamily on input line 115.
-LaTeX Info: Redefining \ttfamily on input line 115.
 LaTeX Info: Redefining \rmfamily on input line 117.
 LaTeX Info: Redefining \sffamily on input line 117.
 LaTeX Info: Redefining \ttfamily on input line 117.
-LaTeX Info: Redefining \rmfamily on input line 117.
-LaTeX Info: Redefining \sffamily on input line 117.
-LaTeX Info: Redefining \ttfamily on input line 117.
-LaTeX Info: Redefining \rmfamily on input line 118.
-LaTeX Info: Redefining \sffamily on input line 118.
-LaTeX Info: Redefining \ttfamily on input line 118.
-LaTeX Info: Redefining \rmfamily on input line 118.
-LaTeX Info: Redefining \sffamily on input line 118.
-LaTeX Info: Redefining \ttfamily on input line 118.
 LaTeX Info: Redefining \rmfamily on input line 119.
 LaTeX Info: Redefining \sffamily on input line 119.
 LaTeX Info: Redefining \ttfamily on input line 119.
@@ -1073,6 +1070,12 @@ LaTeX Info: Redefining \ttfamily on input line 122.
 LaTeX Info: Redefining \rmfamily on input line 122.
 LaTeX Info: Redefining \sffamily on input line 122.
 LaTeX Info: Redefining \ttfamily on input line 122.
+LaTeX Info: Redefining \rmfamily on input line 123.
+LaTeX Info: Redefining \sffamily on input line 123.
+LaTeX Info: Redefining \ttfamily on input line 123.
+LaTeX Info: Redefining \rmfamily on input line 123.
+LaTeX Info: Redefining \sffamily on input line 123.
+LaTeX Info: Redefining \ttfamily on input line 123.
 LaTeX Info: Redefining \rmfamily on input line 124.
 LaTeX Info: Redefining \sffamily on input line 124.
 LaTeX Info: Redefining \ttfamily on input line 124.
@@ -1085,49 +1088,46 @@ LaTeX Info: Redefining \ttfamily on input line 126.
 LaTeX Info: Redefining \rmfamily on input line 126.
 LaTeX Info: Redefining \sffamily on input line 126.
 LaTeX Info: Redefining \ttfamily on input line 126.
-LaTeX Font Info:    Font shape `TU/Arial(0)/m/n' will be
-(Font)              scaled to size 6.64929pt on input line 126.
-LaTeX Font Info:    Font shape `TU/Arial(0)/m/n' will be
-(Font)              scaled to size 7.48045pt on input line 126.
+LaTeX Info: Redefining \rmfamily on input line 128.
+LaTeX Info: Redefining \sffamily on input line 128.
+LaTeX Info: Redefining \ttfamily on input line 128.
+LaTeX Info: Redefining \rmfamily on input line 128.
+LaTeX Info: Redefining \sffamily on input line 128.
+LaTeX Info: Redefining \ttfamily on input line 128.
+LaTeX Font Info:    Font shape `TU/DavidCLM(0)/m/n' will be
+(Font)              scaled to size 8.60205pt on input line 128.
+LaTeX Font Info:    Font shape `TU/DavidCLM(0)/m/n' will be
+(Font)              scaled to size 9.6773pt on input line 128.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 126.
+(Font)              <9> on input line 128.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 126.
-LaTeX Font Info:    Font shape `TU/Arial(0)/m/n' will be
-(Font)              scaled to size 4.98697pt on input line 126.
-LaTeX Info: Redefining \rmfamily on input line 126.
-LaTeX Info: Redefining \sffamily on input line 126.
-LaTeX Info: Redefining \ttfamily on input line 126.
-LaTeX Info: Redefining \rmfamily on input line 126.
-LaTeX Info: Redefining \sffamily on input line 126.
-LaTeX Info: Redefining \ttfamily on input line 126.
-LaTeX Info: Redefining \rmfamily on input line 126.
-LaTeX Info: Redefining \sffamily on input line 126.
-LaTeX Info: Redefining \ttfamily on input line 126.
-LaTeX Info: Redefining \rmfamily on input line 126.
-LaTeX Info: Redefining \sffamily on input line 126.
-LaTeX Info: Redefining \ttfamily on input line 126.
-LaTeX Info: Redefining \rmfamily on input line 126.
-LaTeX Info: Redefining \sffamily on input line 126.
-LaTeX Info: Redefining \ttfamily on input line 126.
-LaTeX Info: Redefining \rmfamily on input line 126.
-LaTeX Info: Redefining \sffamily on input line 126.
-LaTeX Info: Redefining \ttfamily on input line 126.
-LaTeX Info: Redefining \rmfamily on input line 126.
-LaTeX Info: Redefining \sffamily on input line 126.
-LaTeX Info: Redefining \ttfamily on input line 126.
+(Font)              <5> on input line 128.
+LaTeX Font Info:    Font shape `TU/DavidCLM(0)/m/n' will be
+(Font)              scaled to size 6.45154pt on input line 128.
+LaTeX Info: Redefining \rmfamily on input line 128.
+LaTeX Info: Redefining \sffamily on input line 128.
+LaTeX Info: Redefining \ttfamily on input line 128.
+LaTeX Info: Redefining \rmfamily on input line 128.
+LaTeX Info: Redefining \sffamily on input line 128.
+LaTeX Info: Redefining \ttfamily on input line 128.
+LaTeX Info: Redefining \rmfamily on input line 128.
+LaTeX Info: Redefining \sffamily on input line 128.
+LaTeX Info: Redefining \ttfamily on input line 128.
+LaTeX Info: Redefining \rmfamily on input line 128.
+LaTeX Info: Redefining \sffamily on input line 128.
+LaTeX Info: Redefining \ttfamily on input line 128.
+LaTeX Info: Redefining \rmfamily on input line 128.
+LaTeX Info: Redefining \sffamily on input line 128.
+LaTeX Info: Redefining \ttfamily on input line 128.
+LaTeX Info: Redefining \rmfamily on input line 128.
+LaTeX Info: Redefining \sffamily on input line 128.
+LaTeX Info: Redefining \ttfamily on input line 128.
+LaTeX Info: Redefining \rmfamily on input line 128.
+LaTeX Info: Redefining \sffamily on input line 128.
+LaTeX Info: Redefining \ttfamily on input line 128.
  [4]
-LaTeX Font Info:    Font shape `TU/Arial(0)/b/n' will be
-(Font)              scaled to size 9.10121pt on input line 129.
-LaTeX Info: Redefining \rmfamily on input line 129.
-LaTeX Info: Redefining \sffamily on input line 129.
-LaTeX Info: Redefining \ttfamily on input line 129.
-LaTeX Info: Redefining \rmfamily on input line 129.
-LaTeX Info: Redefining \sffamily on input line 129.
-LaTeX Info: Redefining \ttfamily on input line 129.
-LaTeX Info: Redefining \rmfamily on input line 129.
-LaTeX Info: Redefining \sffamily on input line 129.
-LaTeX Info: Redefining \ttfamily on input line 129.
+LaTeX Font Info:    Font shape `TU/DavidCLM(0)/b/n' will be
+(Font)              scaled to size 11.62901pt on input line 131.
 LaTeX Info: Redefining \rmfamily on input line 131.
 LaTeX Info: Redefining \sffamily on input line 131.
 LaTeX Info: Redefining \ttfamily on input line 131.
@@ -1149,225 +1149,218 @@ LaTeX Info: Redefining \ttfamily on input line 133.
 LaTeX Info: Redefining \rmfamily on input line 135.
 LaTeX Info: Redefining \sffamily on input line 135.
 LaTeX Info: Redefining \ttfamily on input line 135.
-LaTeX Info: Redefining \rmfamily on input line 136.
-LaTeX Info: Redefining \sffamily on input line 136.
-LaTeX Info: Redefining \ttfamily on input line 136.
-LaTeX Info: Redefining \rmfamily on input line 136.
-LaTeX Info: Redefining \sffamily on input line 136.
-LaTeX Info: Redefining \ttfamily on input line 136.
-LaTeX Info: Redefining \rmfamily on input line 136.
-LaTeX Info: Redefining \sffamily on input line 136.
-LaTeX Info: Redefining \ttfamily on input line 136.
-LaTeX Info: Redefining \rmfamily on input line 136.
-LaTeX Info: Redefining \sffamily on input line 136.
-LaTeX Info: Redefining \ttfamily on input line 136.
-LaTeX Info: Redefining \rmfamily on input line 136.
-LaTeX Info: Redefining \sffamily on input line 136.
-LaTeX Info: Redefining \ttfamily on input line 136.
-LaTeX Info: Redefining \rmfamily on input line 136.
-LaTeX Info: Redefining \sffamily on input line 136.
-LaTeX Info: Redefining \ttfamily on input line 136.
+LaTeX Info: Redefining \rmfamily on input line 135.
+LaTeX Info: Redefining \sffamily on input line 135.
+LaTeX Info: Redefining \ttfamily on input line 135.
+LaTeX Info: Redefining \rmfamily on input line 135.
+LaTeX Info: Redefining \sffamily on input line 135.
+LaTeX Info: Redefining \ttfamily on input line 135.
+LaTeX Info: Redefining \rmfamily on input line 137.
+LaTeX Info: Redefining \sffamily on input line 137.
+LaTeX Info: Redefining \ttfamily on input line 137.
 LaTeX Info: Redefining \rmfamily on input line 138.
 LaTeX Info: Redefining \sffamily on input line 138.
 LaTeX Info: Redefining \ttfamily on input line 138.
-LaTeX Info: Redefining \rmfamily on input line 139.
-LaTeX Info: Redefining \sffamily on input line 139.
-LaTeX Info: Redefining \ttfamily on input line 139.
-LaTeX Info: Redefining \rmfamily on input line 139.
-LaTeX Info: Redefining \sffamily on input line 139.
-LaTeX Info: Redefining \ttfamily on input line 139.
-LaTeX Info: Redefining \rmfamily on input line 139.
-LaTeX Info: Redefining \sffamily on input line 139.
-LaTeX Info: Redefining \ttfamily on input line 139.
-LaTeX Info: Redefining \rmfamily on input line 139.
-LaTeX Info: Redefining \sffamily on input line 139.
-LaTeX Info: Redefining \ttfamily on input line 139.
-LaTeX Info: Redefining \rmfamily on input line 139.
-LaTeX Info: Redefining \sffamily on input line 139.
-LaTeX Info: Redefining \ttfamily on input line 139.
- [5]
+LaTeX Info: Redefining \rmfamily on input line 138.
+LaTeX Info: Redefining \sffamily on input line 138.
+LaTeX Info: Redefining \ttfamily on input line 138.
+LaTeX Info: Redefining \rmfamily on input line 138.
+LaTeX Info: Redefining \sffamily on input line 138.
+LaTeX Info: Redefining \ttfamily on input line 138.
+LaTeX Info: Redefining \rmfamily on input line 138.
+LaTeX Info: Redefining \sffamily on input line 138.
+LaTeX Info: Redefining \ttfamily on input line 138.
+LaTeX Info: Redefining \rmfamily on input line 138.
+LaTeX Info: Redefining \sffamily on input line 138.
+LaTeX Info: Redefining \ttfamily on input line 138.
+LaTeX Info: Redefining \rmfamily on input line 140.
+LaTeX Info: Redefining \sffamily on input line 140.
+LaTeX Info: Redefining \ttfamily on input line 140.
 LaTeX Info: Redefining \rmfamily on input line 141.
 LaTeX Info: Redefining \sffamily on input line 141.
 LaTeX Info: Redefining \ttfamily on input line 141.
+LaTeX Info: Redefining \rmfamily on input line 141.
+LaTeX Info: Redefining \sffamily on input line 141.
+LaTeX Info: Redefining \ttfamily on input line 141.
+LaTeX Info: Redefining \rmfamily on input line 141.
+LaTeX Info: Redefining \sffamily on input line 141.
+LaTeX Info: Redefining \ttfamily on input line 141.
+LaTeX Info: Redefining \rmfamily on input line 142.
+LaTeX Info: Redefining \sffamily on input line 142.
+LaTeX Info: Redefining \ttfamily on input line 142.
+ [5]
+LaTeX Info: Redefining \rmfamily on input line 144.
+LaTeX Info: Redefining \sffamily on input line 144.
+LaTeX Info: Redefining \ttfamily on input line 144.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\textenglish' on input line 141.
+(hyperref)                removing `\textenglish' on input line 144.
 
-LaTeX Info: Redefining \rmfamily on input line 143.
-LaTeX Info: Redefining \sffamily on input line 143.
-LaTeX Info: Redefining \ttfamily on input line 143.
-LaTeX Info: Redefining \rmfamily on input line 143.
-LaTeX Info: Redefining \sffamily on input line 143.
-LaTeX Info: Redefining \ttfamily on input line 143.
-LaTeX Info: Redefining \rmfamily on input line 143.
-LaTeX Info: Redefining \sffamily on input line 143.
-LaTeX Info: Redefining \ttfamily on input line 143.
-LaTeX Info: Redefining \rmfamily on input line 143.
-LaTeX Info: Redefining \sffamily on input line 143.
-LaTeX Info: Redefining \ttfamily on input line 143.
-LaTeX Info: Redefining \rmfamily on input line 143.
-LaTeX Info: Redefining \sffamily on input line 143.
-LaTeX Info: Redefining \ttfamily on input line 143.
-LaTeX Info: Redefining \rmfamily on input line 143.
-LaTeX Info: Redefining \sffamily on input line 143.
-LaTeX Info: Redefining \ttfamily on input line 143.
+LaTeX Info: Redefining \rmfamily on input line 146.
+LaTeX Info: Redefining \sffamily on input line 146.
+LaTeX Info: Redefining \ttfamily on input line 146.
+LaTeX Info: Redefining \rmfamily on input line 146.
+LaTeX Info: Redefining \sffamily on input line 146.
+LaTeX Info: Redefining \ttfamily on input line 146.
+LaTeX Info: Redefining \rmfamily on input line 146.
+LaTeX Info: Redefining \sffamily on input line 146.
+LaTeX Info: Redefining \ttfamily on input line 146.
+LaTeX Info: Redefining \rmfamily on input line 146.
+LaTeX Info: Redefining \sffamily on input line 146.
+LaTeX Info: Redefining \ttfamily on input line 146.
+LaTeX Info: Redefining \rmfamily on input line 146.
+LaTeX Info: Redefining \sffamily on input line 146.
+LaTeX Info: Redefining \ttfamily on input line 146.
+LaTeX Info: Redefining \rmfamily on input line 146.
+LaTeX Info: Redefining \sffamily on input line 146.
+LaTeX Info: Redefining \ttfamily on input line 146.
 File: config.png Graphic file (type bmp)
 <config.png>
-LaTeX Info: Redefining \rmfamily on input line 147.
-LaTeX Info: Redefining \sffamily on input line 147.
-LaTeX Info: Redefining \ttfamily on input line 147.
-LaTeX Info: Redefining \rmfamily on input line 147.
-LaTeX Info: Redefining \sffamily on input line 147.
-LaTeX Info: Redefining \ttfamily on input line 147.
 LaTeX Info: Redefining \rmfamily on input line 150.
 LaTeX Info: Redefining \sffamily on input line 150.
 LaTeX Info: Redefining \ttfamily on input line 150.
 LaTeX Info: Redefining \rmfamily on input line 150.
 LaTeX Info: Redefining \sffamily on input line 150.
 LaTeX Info: Redefining \ttfamily on input line 150.
-LaTeX Info: Redefining \rmfamily on input line 151.
-LaTeX Info: Redefining \sffamily on input line 151.
-LaTeX Info: Redefining \ttfamily on input line 151.
-LaTeX Info: Redefining \rmfamily on input line 151.
-LaTeX Info: Redefining \sffamily on input line 151.
-LaTeX Info: Redefining \ttfamily on input line 151.
-LaTeX Info: Redefining \rmfamily on input line 152.
-LaTeX Info: Redefining \sffamily on input line 152.
-LaTeX Info: Redefining \ttfamily on input line 152.
-LaTeX Info: Redefining \rmfamily on input line 152.
-LaTeX Info: Redefining \sffamily on input line 152.
-LaTeX Info: Redefining \ttfamily on input line 152.
-LaTeX Info: Redefining \rmfamily on input line 152.
-LaTeX Info: Redefining \sffamily on input line 152.
-LaTeX Info: Redefining \ttfamily on input line 152.
+LaTeX Info: Redefining \rmfamily on input line 153.
+LaTeX Info: Redefining \sffamily on input line 153.
+LaTeX Info: Redefining \ttfamily on input line 153.
+LaTeX Info: Redefining \rmfamily on input line 153.
+LaTeX Info: Redefining \sffamily on input line 153.
+LaTeX Info: Redefining \ttfamily on input line 153.
+LaTeX Info: Redefining \rmfamily on input line 154.
+LaTeX Info: Redefining \sffamily on input line 154.
+LaTeX Info: Redefining \ttfamily on input line 154.
+LaTeX Info: Redefining \rmfamily on input line 154.
+LaTeX Info: Redefining \sffamily on input line 154.
+LaTeX Info: Redefining \ttfamily on input line 154.
+LaTeX Info: Redefining \rmfamily on input line 155.
+LaTeX Info: Redefining \sffamily on input line 155.
+LaTeX Info: Redefining \ttfamily on input line 155.
+LaTeX Info: Redefining \rmfamily on input line 155.
+LaTeX Info: Redefining \sffamily on input line 155.
+LaTeX Info: Redefining \ttfamily on input line 155.
+LaTeX Info: Redefining \rmfamily on input line 155.
+LaTeX Info: Redefining \sffamily on input line 155.
+LaTeX Info: Redefining \ttfamily on input line 155.
 File: backtesting.png Graphic file (type bmp)
 <backtesting.png>
-
-Overfull \hbox (57.84932pt too wide) in paragraph at lines 150--157
-[]\TU/Arial(0)/m/n/10.95 נקרא לפונקציה [][]\TU/lmr/m/n/10.95 backtest($\OMS/lmsy/m/n/10.95 ^^A$\TU/lmr/m/n/10.95 )[][]\TU/Arial(0)/m/n/10.95 . הפונקציה [][]\TU/lmr/m/n/10.95 backtest($\OMS/lmsy/m/n/10.95 ^^A$\TU/lmr/m/n/10.95 )[] []\TU/Arial(0)/m/n/10.95 תסמלץ עבורנו את המסחר ולאחר מכן נקרא לפונקציה [][]\TU/lmr/m/n/10.95 evaluate_strategy($\OMS/lmsy/m/n/10.95 ^^A$\TU/lmr/m/n/10.95 )[][]
- []
-
 [6]
-LaTeX Info: Redefining \rmfamily on input line 158.
-LaTeX Info: Redefining \sffamily on input line 158.
-LaTeX Info: Redefining \ttfamily on input line 158.
-LaTeX Info: Redefining \rmfamily on input line 158.
-LaTeX Info: Redefining \sffamily on input line 158.
-LaTeX Info: Redefining \ttfamily on input line 158.
-LaTeX Info: Redefining \rmfamily on input line 159.
-LaTeX Info: Redefining \sffamily on input line 159.
-LaTeX Info: Redefining \ttfamily on input line 159.
-LaTeX Info: Redefining \rmfamily on input line 159.
-LaTeX Info: Redefining \sffamily on input line 159.
-LaTeX Info: Redefining \ttfamily on input line 159.
+LaTeX Info: Redefining \rmfamily on input line 161.
+LaTeX Info: Redefining \sffamily on input line 161.
+LaTeX Info: Redefining \ttfamily on input line 161.
+LaTeX Info: Redefining \rmfamily on input line 161.
+LaTeX Info: Redefining \sffamily on input line 161.
+LaTeX Info: Redefining \ttfamily on input line 161.
+LaTeX Info: Redefining \rmfamily on input line 162.
+LaTeX Info: Redefining \sffamily on input line 162.
+LaTeX Info: Redefining \ttfamily on input line 162.
+LaTeX Info: Redefining \rmfamily on input line 162.
+LaTeX Info: Redefining \sffamily on input line 162.
+LaTeX Info: Redefining \ttfamily on input line 162.
 File: flow_chart.png Graphic file (type bmp)
 <flow_chart.png>
-LaTeX Info: Redefining \rmfamily on input line 167.
-LaTeX Info: Redefining \sffamily on input line 167.
-LaTeX Info: Redefining \ttfamily on input line 167.
-LaTeX Info: Redefining \rmfamily on input line 167.
-LaTeX Info: Redefining \sffamily on input line 167.
-LaTeX Info: Redefining \ttfamily on input line 167.
-LaTeX Info: Redefining \rmfamily on input line 169.
-LaTeX Info: Redefining \sffamily on input line 169.
-LaTeX Info: Redefining \ttfamily on input line 169.
-LaTeX Info: Redefining \rmfamily on input line 169.
-LaTeX Info: Redefining \sffamily on input line 169.
-LaTeX Info: Redefining \ttfamily on input line 169.
-LaTeX Info: Redefining \rmfamily on input line 169.
-LaTeX Info: Redefining \sffamily on input line 169.
-LaTeX Info: Redefining \ttfamily on input line 169.
-LaTeX Info: Redefining \rmfamily on input line 169.
-LaTeX Info: Redefining \sffamily on input line 169.
-LaTeX Info: Redefining \ttfamily on input line 169.
-LaTeX Info: Redefining \rmfamily on input line 169.
-LaTeX Info: Redefining \sffamily on input line 169.
-LaTeX Info: Redefining \ttfamily on input line 169.
 LaTeX Info: Redefining \rmfamily on input line 170.
 LaTeX Info: Redefining \sffamily on input line 170.
 LaTeX Info: Redefining \ttfamily on input line 170.
 LaTeX Info: Redefining \rmfamily on input line 170.
 LaTeX Info: Redefining \sffamily on input line 170.
 LaTeX Info: Redefining \ttfamily on input line 170.
-
-Overfull \hbox (0.36949pt too wide) in paragraph at lines 169--171
-[]\TU/Arial(0)/m/n/10.95 לא בהכרח נתפוס אותה במחיר שרצינו וגם צריך לקחת בחשבון את העמלות מסחר. כפי שאפשר לראות בקובץ [][]\TU/lmr/m/n/10.95 config.json[][]
- []
-
-[7]
+ [7]
 LaTeX Info: Redefining \rmfamily on input line 172.
 LaTeX Info: Redefining \sffamily on input line 172.
 LaTeX Info: Redefining \ttfamily on input line 172.
 LaTeX Info: Redefining \rmfamily on input line 172.
 LaTeX Info: Redefining \sffamily on input line 172.
 LaTeX Info: Redefining \ttfamily on input line 172.
-LaTeX Info: Redefining \rmfamily on input line 174.
-LaTeX Info: Redefining \sffamily on input line 174.
-LaTeX Info: Redefining \ttfamily on input line 174.
+LaTeX Info: Redefining \rmfamily on input line 172.
+LaTeX Info: Redefining \sffamily on input line 172.
+LaTeX Info: Redefining \ttfamily on input line 172.
+LaTeX Info: Redefining \rmfamily on input line 172.
+LaTeX Info: Redefining \sffamily on input line 172.
+LaTeX Info: Redefining \ttfamily on input line 172.
+LaTeX Info: Redefining \rmfamily on input line 172.
+LaTeX Info: Redefining \sffamily on input line 172.
+LaTeX Info: Redefining \ttfamily on input line 172.
+LaTeX Info: Redefining \rmfamily on input line 173.
+LaTeX Info: Redefining \sffamily on input line 173.
+LaTeX Info: Redefining \ttfamily on input line 173.
+LaTeX Info: Redefining \rmfamily on input line 173.
+LaTeX Info: Redefining \sffamily on input line 173.
+LaTeX Info: Redefining \ttfamily on input line 173.
 LaTeX Info: Redefining \rmfamily on input line 175.
 LaTeX Info: Redefining \sffamily on input line 175.
 LaTeX Info: Redefining \ttfamily on input line 175.
-LaTeX Info: Redefining \rmfamily on input line 176.
-LaTeX Info: Redefining \sffamily on input line 176.
-LaTeX Info: Redefining \ttfamily on input line 176.
+LaTeX Info: Redefining \rmfamily on input line 175.
+LaTeX Info: Redefining \sffamily on input line 175.
+LaTeX Info: Redefining \ttfamily on input line 175.
 LaTeX Info: Redefining \rmfamily on input line 177.
 LaTeX Info: Redefining \sffamily on input line 177.
 LaTeX Info: Redefining \ttfamily on input line 177.
 LaTeX Info: Redefining \rmfamily on input line 178.
 LaTeX Info: Redefining \sffamily on input line 178.
 LaTeX Info: Redefining \ttfamily on input line 178.
+LaTeX Info: Redefining \rmfamily on input line 179.
+LaTeX Info: Redefining \sffamily on input line 179.
+LaTeX Info: Redefining \ttfamily on input line 179.
+LaTeX Info: Redefining \rmfamily on input line 180.
+LaTeX Info: Redefining \sffamily on input line 180.
+LaTeX Info: Redefining \ttfamily on input line 180.
+LaTeX Info: Redefining \rmfamily on input line 181.
+LaTeX Info: Redefining \sffamily on input line 181.
+LaTeX Info: Redefining \ttfamily on input line 181.
 File: Results_output.jpeg Graphic file (type bmp)
 <Results_output.jpeg>
 
-Overfull \hbox (17.5989pt too wide) in paragraph at lines 185--186
+Overfull \hbox (17.5989pt too wide) in paragraph at lines 188--189
  [][][][][][] 
  []
 
-LaTeX Font Info:    Font shape `TU/Arial(0)/m/n' will be
-(Font)              scaled to size 8.31161pt on input line 186.
-LaTeX Info: Redefining \rmfamily on input line 186.
-LaTeX Info: Redefining \sffamily on input line 186.
-LaTeX Info: Redefining \ttfamily on input line 186.
-LaTeX Info: Redefining \rmfamily on input line 186.
-LaTeX Info: Redefining \sffamily on input line 186.
-LaTeX Info: Redefining \ttfamily on input line 186.
+LaTeX Font Info:    Font shape `TU/DavidCLM(0)/m/n' will be
+(Font)              scaled to size 10.75256pt on input line 189.
+LaTeX Info: Redefining \rmfamily on input line 189.
+LaTeX Info: Redefining \sffamily on input line 189.
+LaTeX Info: Redefining \ttfamily on input line 189.
+LaTeX Info: Redefining \rmfamily on input line 189.
+LaTeX Info: Redefining \sffamily on input line 189.
+LaTeX Info: Redefining \ttfamily on input line 189.
 File: Results_ouput2.jpeg Graphic file (type bmp)
 <Results_ouput2.jpeg>
 
-Overfull \hbox (27.41281pt too wide) in paragraph at lines 192--193
+Overfull \hbox (27.41281pt too wide) in paragraph at lines 195--196
  [][][][][][] 
  []
 
-LaTeX Info: Redefining \rmfamily on input line 193.
-LaTeX Info: Redefining \sffamily on input line 193.
-LaTeX Info: Redefining \ttfamily on input line 193.
-LaTeX Info: Redefining \rmfamily on input line 193.
-LaTeX Info: Redefining \sffamily on input line 193.
-LaTeX Info: Redefining \ttfamily on input line 193.
+LaTeX Info: Redefining \rmfamily on input line 196.
+LaTeX Info: Redefining \sffamily on input line 196.
+LaTeX Info: Redefining \ttfamily on input line 196.
+LaTeX Info: Redefining \rmfamily on input line 196.
+LaTeX Info: Redefining \sffamily on input line 196.
+LaTeX Info: Redefining \ttfamily on input line 196.
 File: backtesting1.png Graphic file (type bmp)
 <backtesting1.png>
 [8]
-LaTeX Info: Redefining \rmfamily on input line 208.
-LaTeX Info: Redefining \sffamily on input line 208.
-LaTeX Info: Redefining \ttfamily on input line 208.
-LaTeX Info: Redefining \rmfamily on input line 209.
-LaTeX Info: Redefining \sffamily on input line 209.
-LaTeX Info: Redefining \ttfamily on input line 209.
-LaTeX Info: Redefining \rmfamily on input line 210.
-LaTeX Info: Redefining \sffamily on input line 210.
-LaTeX Info: Redefining \ttfamily on input line 210.
+LaTeX Info: Redefining \rmfamily on input line 211.
+LaTeX Info: Redefining \sffamily on input line 211.
+LaTeX Info: Redefining \ttfamily on input line 211.
+LaTeX Info: Redefining \rmfamily on input line 212.
+LaTeX Info: Redefining \sffamily on input line 212.
+LaTeX Info: Redefining \ttfamily on input line 212.
+LaTeX Info: Redefining \rmfamily on input line 213.
+LaTeX Info: Redefining \sffamily on input line 213.
+LaTeX Info: Redefining \ttfamily on input line 213.
  [9] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 75806A666756E20B09E2715F5664F6DC;2030.
+(rerunfilecheck)             Checksum: 7DCD0E622C4057B75B842DB82E5F4176;2006.
  ) 
 Here is how much of TeX's memory you used:
  29013 strings out of 474773
- 608541 string characters out of 5757724
+ 608841 string characters out of 5757724
  1930839 words of memory out of 5000000
  50586 multiletter control sequences out of 15000+600000
  585929 words of font info for 97 fonts, out of 8000000 for 9000
